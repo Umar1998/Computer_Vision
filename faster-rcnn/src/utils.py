@@ -65,7 +65,7 @@ def object_detection_api(img_path, model, out_path, threshold=0.5, rect_th=3, te
         - prediction is obtained from get_prediction method
         - for each prediction, bounding box is drawn and text is written 
           with opencv
-        - the final image is displayed
+        - the final image is saved
     """
     boxes, pred_cls = get_prediction(img_path, model, threshold)
     img = cv2.imread(img_path)
