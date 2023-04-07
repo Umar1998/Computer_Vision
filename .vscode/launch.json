@@ -11,6 +11,18 @@
             "program": "${file}",
             "console": "integratedTerminal",
             "justMyCode": true
+        },
+        {
+            "name": "frcnn",
+            "type": "python",
+            "request": "launch",
+            "program": "./faster-rcnn/src/inference.py",
+            "args": [
+            "--data-path", "./faster-rcnn/data",
+            "--out-path-base", "./faster-rcnn/outputs"
+            ],
+            "console": "integratedTerminal",
+            "justMyCode": true
         }
     ]
 }
