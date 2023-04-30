@@ -1,0 +1,4 @@
+.venv/
+*.pyc
+faster-rcnn/data/
+faster-rcnn/outputs/
