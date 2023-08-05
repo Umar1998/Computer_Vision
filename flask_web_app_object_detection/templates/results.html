@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>YOLOv5 Object Detection Results</title>
+</head>
+<body>
+    <h1>YOLOv5 Object Detection Results</h1>
+    {% if df %}
+        {{ df|safe }}
+    {% else %}
+        <p>No results to display.</p>
+    {% endif %}
+</body>
+</html>
