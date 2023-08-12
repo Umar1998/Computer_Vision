@@ -39,7 +39,8 @@ def video_in_img_out(vid_inp_path, out_path, model):
         plot_bbox_per_frame(image, results.xyxy[0], frame_save_path)
 
         df_per_frame = results.pandas().xyxy[0]
-        df = df.append(df_per_frame, ignore_index=True)
+        # df = df.append(df_per_frame, ignore_index=True)
+        df = pd.concat([df, df_per_frame], ignore_index=True) 
 
         count += 1
 
